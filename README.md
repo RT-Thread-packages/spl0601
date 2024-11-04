@@ -76,7 +76,7 @@ int rt_hw_spl0601_init(const char *name, struct rt_sensor_config *cfg);
 #### 初始化示例
 
 ```
-#include "sensor_goer_spl0601.h"
+#include "spl0601_sensor_v1.h"
 
 int spl0601_port(void)
 {

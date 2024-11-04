@@ -1,4 +1,4 @@
-#include "sensor_goer_spl0601.h"
+#include "spl0601_sensor_v1.h"
 #include "spl06_01.h"
 
 #define DBG_ENABLE
