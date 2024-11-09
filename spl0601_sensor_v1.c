@@ -1,4 +1,4 @@
-#include "sensor_goer_spl0601.h"
+#include "spl0601_sensor_v1.h"
 #include "spl06_01.h"
 
 #define DBG_ENABLE
@@ -23,7 +23,7 @@ static spl0601_t * _spl0601_create(struct rt_sensor_intf *intf)
     return hdev;
 }
 
-static rt_size_t spl0601_fetch_data(struct rt_sensor_device *sensor, void *buf, rt_size_t len)
+static RT_SIZE_TYPE spl0601_fetch_data(struct rt_sensor_device *sensor, void *buf, rt_size_t len)
 {
     spl0601_t *hdev = sensor->parent.user_data;
     struct rt_sensor_data *data = (struct rt_sensor_data *)buf;
